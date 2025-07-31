@@ -19,7 +19,9 @@ let project = Project(
             ),
             sources: ["Package/Sources/**"],
 //            resources: ["Resources/**"],
-            dependencies: [],
+            dependencies: [
+//                .external(name: "CustomDump")
+            ],
             settings: .settings(base: [
                 "SWIFT_VERSION": "6.0",
                 "OTHER_SWIFT_FLAGS": [
@@ -37,7 +39,10 @@ let project = Project(
             infoPlist: .default,
             sources: ["Package/Tests/**"],
             resources: [],
-            dependencies: [.target(name: "TestingWildcards")]
+            dependencies: [
+                .target(name: "TestingWildcards"),
+                .external(name: "CustomDump")
+            ]
         ),
 //        .target(
 //            name: "MacroTest",
