@@ -1,0 +1,3 @@
+[submodule "Package"]
+	path = Package
+	url = https://github.com/alexhunsley/swift-testing-wildcards
