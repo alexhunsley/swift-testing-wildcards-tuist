@@ -19,9 +19,7 @@ let project = Project(
             ),
             sources: ["Package/Sources/**"],
 //            resources: ["Resources/**"],
-            dependencies: [
-//                .external(name: "CustomDump")
-            ],
+//            dependencies: [ ],
             settings: .settings(base: [
                 "SWIFT_VERSION": "6.0",
                 "OTHER_SWIFT_FLAGS": [
@@ -40,8 +38,7 @@ let project = Project(
             sources: ["Package/Tests/**"],
             resources: [],
             dependencies: [
-                .target(name: "TestingWildcards"),
-                .external(name: "CustomDump")
+                .target(name: "TestingWildcards")
             ]
         ),
 //        .target(
