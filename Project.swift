@@ -18,8 +18,6 @@ let project = Project(
                 ]
             ),
             sources: ["Package/Sources/**"],
-//            resources: ["Resources/**"],
-//            dependencies: [ ],
             settings: .settings(base: [
                 "SWIFT_VERSION": "6.0",
                 "OTHER_SWIFT_FLAGS": [
@@ -41,17 +39,6 @@ let project = Project(
                 .target(name: "TestingWildcards")
             ]
         ),
-//        .target(
-//            name: "MacroTest",
-//            destinations: .iOS,
-//            product: .unitTests,
-//            bundleId: "dev.tuist.TestingWildcardsTests",
-//            dependencies: [
-//                "TestingWildcards",
-//                "TestingWildcardsTests",
-//                .product(name: "SwiftSyntaxMacrosTestSupport", package: "swift-syntax")
-//            ]
-//        )
     ],
     additionalFiles: [
         "Package/README.md",
